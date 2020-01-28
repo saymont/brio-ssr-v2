@@ -38,7 +38,8 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="NextJS Material Kit"
+        brand="Briosense"
+        //image={require("assets/img/component.png")}
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"

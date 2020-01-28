@@ -17,10 +17,21 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "assets/jss/nextjs-material-kit/components/headerStyle.js";
 
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
+import logo from "assets/img/cropped-logotipo-fundo-branco-06.png";
+
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
   const classes = useStyles();
+  const imageClasses = classNames(
+    classes.imgRaised,
+    classes.imgRoundedCircle,
+    classes.imgFluid
+  );
+  const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
+
   const [mobileOpen, setMobileOpen] = React.useState(false);
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
@@ -62,9 +73,19 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   const brandComponent = (
-    <Link href="/components" as="/components">
-      <Button className={classes.title}>{brand}</Button>
-    </Link>
+    <GridContainer justify="left">
+      <GridItem xs={2} sm={2} md={4}>
+        <Link href="/components" as="/components">
+          <Button className={classes.title}>
+            {
+              <div>
+                <img src={logo} alt="..." className={navImageClasses} />
+              </div>
+            }
+          </Button>
+        </Link>
+      </GridItem>
+    </GridContainer>
   );
   return (
     <AppBar className={appBarClasses}>
