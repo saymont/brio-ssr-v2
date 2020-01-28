@@ -79,7 +79,18 @@ export default function Header(props) {
           <Button className={classes.title}>
             {
               <div>
-                <img src={logo} alt="..." className={navImageClasses} />
+                <img
+                  src={logo}
+                  alt="..."
+                  className={navImageClasses}
+                  id="logoImage"
+                />
+                <style jsx>{`
+                  #logoImage {
+                    height: 80%;
+                    width: 80%;
+                  }
+                `}</style>
               </div>
             }
           </Button>
