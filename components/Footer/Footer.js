@@ -37,7 +37,7 @@ export default function Footer(props) {
                 className={classes.block}
                 target="_blank"
               >
-                Creative Tim
+                Serviços
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
@@ -46,7 +46,7 @@ export default function Footer(props) {
                 className={classes.block}
                 target="_blank"
               >
-                About us
+                Termos
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
@@ -55,31 +55,21 @@ export default function Footer(props) {
                 className={classes.block}
                 target="_blank"
               >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license?ref=njsmk-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
+                Baixe o App
               </a>
             </ListItem>
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
+          &copy; {1900 + new Date().getYear()}
+          <Favorite className={classes.icon} /> feito por{" "}
           <a
             href="https://www.creative-tim.com?ref=njsmk-footer"
             className={aClasses}
             target="_blank"
           >
-            Creative Tim
+            Briosense
           </a>{" "}
-          for a better web.
         </div>
       </div>
     </footer>

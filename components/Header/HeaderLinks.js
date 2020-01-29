@@ -26,38 +26,55 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          navDropdown
-          buttonText="Components"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link href="/components">
-              <a className={classes.dropdownLink}>All components</a>
-            </Link>,
-            <a
-              href="https://creativetimofficial.github.io/nextjs-material-kit/#/documentation?ref=njsmk-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
-          ]}
-        />
+        <Button
+          href="#pablo"
+          className={classes.navLink}
+          onClick={e => e.preventDefault()}
+          color="transparent"
+        >
+          terapia
+                  </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-navbar"
-          color="transparent"
-          target="_blank"
+          href="#pablo"
           className={classes.navLink}
+          onClick={e => e.preventDefault()}
+          color="transparent"
         >
-          <CloudDownload className={classes.icons} /> Download
-        </Button>
+          briotext
+                  </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="#pablo"
+          className={classes.navLink}
+          onClick={e => e.preventDefault()}
+          color="transparent"
+        >
+          sobre
+                  </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="#pablo"
+          className={classes.navLink}
+          onClick={e => e.preventDefault()}
+          color="transparent"
+        >
+          Login
+                  </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="#pablo"
+          className={classes.registerNavLink}
+          onClick={e => e.preventDefault()}
+          color="rose"
+          round
+        >
+          Ser Briosense
+                  </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">
@@ -65,7 +82,7 @@ export default function HeaderLinks(props) {
             <DeleteIcon />
           </IconButton>
         </Tooltip>*/}
-        <Tooltip
+        {/* <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
           placement={"top"}
@@ -79,10 +96,10 @@ export default function HeaderLinks(props) {
           >
             <i className={classes.socialIcons + " fab fa-twitter"} />
           </Button>
-        </Tooltip>
+        </Tooltip> */}
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Tooltip
+        {/* <Tooltip
           id="instagram-facebook"
           title="Follow us on facebook"
           placement={"top"}
@@ -96,10 +113,10 @@ export default function HeaderLinks(props) {
           >
             <i className={classes.socialIcons + " fab fa-facebook"} />
           </Button>
-        </Tooltip>
+        </Tooltip> */}
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Tooltip
+        {/* <Tooltip
           id="instagram-tooltip"
           title="Follow us on instagram"
           placement={"top"}
@@ -113,7 +130,7 @@ export default function HeaderLinks(props) {
           >
             <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
-        </Tooltip>
+        </Tooltip> */}
       </ListItem>
     </List>
   );
